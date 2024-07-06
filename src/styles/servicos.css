@@ -1,0 +1,207 @@
+#servicos{
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    /* padding-top: 100px; */
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+#servicos .cta{
+    margin-bottom: 10px;
+}
+#servicos .cta .titulo{
+    padding-left: 8px;
+    border-left: solid 2px var(--color-1);
+}
+
+#servicos .cta .titulo p{
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#servicos .cta .titulo h2{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    line-height: 2.3rem;
+}
+
+.galeria_de_servicos{
+    width: 100%;
+    position: relative;
+}
+
+.galeria_de_servicos i{
+    width: 50px;
+    height: 50px;
+    background-color: #121212ad;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.galeria_de_servicos i:first-child{
+    left: -18px;
+}
+.galeria_de_servicos i:last-child{
+    right: -18px;
+}
+
+.galeria_de_servicos .galeria{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/4) - 12px);
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;  /* ou 0 */
+}
+.galeria::-webkit-scrollbar{
+    display: none;
+}
+
+.galeria.no-transition{
+    scroll-behavior: auto;
+}
+.galeria.dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.galeria.dragging .card_servico{
+    cursor: grab;
+    user-select: none;
+}
+
+.galeria .card_servico{
+    scroll-snap-align: start;
+    list-style: none;
+    /* background-color: #282828; */
+    /* background-color: #0f0f0f; */
+    background-color: #121212;
+    /* border: solid 0.1px var(--color-1); */
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.card_servico .conteudo_card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.card_servico .conteudo_card .imagem_servico img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card_servico .conteudo_card .titulo_servico h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1250px){
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/3) - 50px);
+    }
+}
+@media screen and (max-width: 900px){
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/3) - 12px);
+    }
+    .galeria_de_servicos i{
+        display: none;
+    }
+}
+@media screen and (max-width: 740px){
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/2) - 80px);
+    }
+}
+@media screen and (max-width: 620px){
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/2) - 50px);
+    }
+}
+@media screen and (max-width: 520px){
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/1) - 120px);
+    }
+}
+@media screen and (max-width: 430px){
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/1) - 100px);
+    }
+}
+@media screen and (max-width: 330px) {
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/1) - 50px);
+    }
+}
+@media screen and (max-width: 270px) {
+    .galeria_de_servicos .galeria{
+        grid-auto-columns: calc((100%/1) - 20px);
+    }
+}
+
+.horario-de-funcionamento{
+    width: 100%;
+}
+.horario-de-funcionamento table{
+    width: 100%;
+}
+.horario-de-funcionamento table tbody{
+    display: flex;
+    /* flex-direction: column; */
+}
+.horario-de-funcionamento table tbody tr{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.horario-de-funcionamento table{
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 6px;
+}
+.horario-de-funcionamento table .dia{
+    width: 130px;
+    color: #ffffffec !important;
+    text-align: right;
+    padding: 0px 5px;
+}
+.horario-de-funcionamento table .horario{
+    background-color: #212121;
+    padding: 5px;
+    border-radius: 6px;
+    color: #ffffffec !important;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .horario-de-funcionamento table tbody{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,76 @@
+.menu {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #0f0f0f;
+    /* color: white; */
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    /* color: white; */
+    display: block;
+    transition: 0.3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fecc0288;
+}
+
+.menu a:hover {
+    background-color: #181818;
+}
+
+.mobile-menu-btn {
+    /* position: absolute; */
+    /* top: 15px;
+    left: 15px; */
+    font-size: 30px;
+    cursor: pointer;
+    /* color: white; */
+    background: none;
+    border: none;
+    /* padding: 10px 15px; */
+    /* border-radius: 5px; */
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.open-menu {
+    right: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 500;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.wpp-menu{
+    background-color: #007b00;
+    color: #fff !important;
+    border-radius: 6px 0 0 6px;
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px !important;
+}
+.wpp-menu i{
+    color: #fff !important;
+}

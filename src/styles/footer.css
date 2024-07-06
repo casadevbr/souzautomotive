@@ -1,0 +1,9 @@
+#footer .page-container{
+    justify-content: center;
+    padding: 20px;
+}
+#footer .page-container p{
+    color: #ffffff8a !important;
+    text-align: center;
+    font-size: .8rem;
+}

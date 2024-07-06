@@ -1,0 +1,87 @@
+#contato .page-container{
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+}
+#contato .page-container .mapa{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#contato .page-container .mapa iframe{
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+#contato .page-container .mapa h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#contato .page-container .cta{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: radial-gradient(circle, #222222, #0b0b0b);
+    padding: 20px;
+    border-radius: 6px;
+}
+#contato .page-container .cta .cta-desc{
+    max-width: 300px;
+}
+
+#contato .page-container .cta .cta-desc .titulo h2{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+#contato .page-container .cta .cta-desc .descricao p{
+    color: #fff;
+}
+
+#contato .page-container .cta ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#contato .page-container .cta ul li a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: radial-gradient(ellipse at left, var(--color-1), #ff9100c6);
+    padding: 2px 10px;
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+#contato .page-container .cta ul li a i{
+    font-size: 1.6rem;
+    color: #000;
+}
+
+#contato .page-container .cta ul li a p{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width:600px) {
+    #contato .page-container{
+        flex-direction: column;
+        /* gap: 100px; */
+    }
+    #contato .page-container .mapa h3{
+        text-align: center;
+    }
+}

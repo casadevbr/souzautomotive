@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souza Automotive</title>
+    <script src="./src/js/servicos.js" defer></script>
+    <script src="./src/js/menu.js"></script>
+
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <header id="header" class="">
+        <div class="page-container">
+            <div class="logo">
+                <img src="./src/images/logo-souza-automotive.png" alt="Souza Automotive" draggable="false">
+            </div>
+
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#inicio" class="actual-section">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- <i class="bi bi-list"></i> -->
+            <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button> -->
+            <button class="mobile-menu-btn" onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+
+            <div id="mobile-menu" class="menu">
+                <a href="#inicio" onclick="closeMenu()" class="actual-section">Início</a>
+                <a href="#servicos" onclick="closeMenu()">Serviços</a>
+                <a href="#contato" onclick="closeMenu()">Contato</a>
+                <a href="https://wa.me/5563991081391/" target="_blank" rel="noopener noreferrer" class="wpp-menu">
+                    Fale conoso <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        
+            <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+        </div>
+    </header>
+
+    <!-- botao-whatsapp -->
+    <a href="https://wa.me/5563991081391/" target="_blank" rel="noopener noreferrer" class="btn_whatsapp">
+        <div>
+            <i class="bi bi-whatsapp"></i>
+        </div>
+    </a>
+
+    <main id="main">
+
+        <section id="inicio" class="section">
+            <div class="page-container">
+                <div class="cta">
+                    <h1 class="main-subtitle">Sua oficina especializada em<br>
+                    <span class="main-title">Jeep & <span id="ram">RAM</span></span></h1>
+                </div>         
+            </div>
+            <video autoplay loop muted plays-inline class="video-background">
+                <source src="src/background-jeep-ram.mp4" type="video/mp4">
+                <div class="gradiente"></div>
+            </video>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos" class="section page-container">
+
+            <div class="cta">
+                <div class="titulo">
+                    <p>Nossos</p>
+                    <h2>Serviços</h2>
+                </div>
+            </div>
+
+            <div class="galeria_de_servicos">
+
+                <i id="left">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="#fecc02c1"></path> </g></svg>
+                </i>
+                
+                <ul class="galeria">
+
+                    <li class="card_servico">
+                        <div class="conteudo_card">
+                            <div class="imagem_servico">
+                                <img src="./src/images/troca-de-oleo.png" alt="Troca de Óleo" draggable="false">
+                            </div>
+                            <div class="titulo_servico">
+                                <h3>Troca de Óleo</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card_servico">
+                        <div class="conteudo_card">
+                            <div class="imagem_servico">
+                                <img src="./src/images/assistencia.png" alt="Assistência" draggable="false">
+                            </div>
+                            <div class="titulo_servico">
+                                <h3>Assistência</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card_servico">
+                        <div class="conteudo_card">
+                            <div class="imagem_servico">
+                                <img src="./src/images/revisao.png" alt="Revisão" draggable="false">
+                            </div>
+                            <div class="titulo_servico">
+                                <h3>Revisão</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card_servico">
+                        <div class="conteudo_card">
+                            <div class="imagem_servico">
+                                <img src="./src/images/diagnostico.png" alt="Diagnóstico" draggable="false">
+                            </div>
+                            <div class="titulo_servico">
+                                <h3>Diagnóstico</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card_servico">
+                        <div class="conteudo_card">
+                            <div class="imagem_servico">
+                                <img src="./src/images/manutencao.png" alt="Manutenção Geral" draggable="false">
+                            </div>
+                            <div class="titulo_servico">
+                                <h3>Manutenção</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <i id="right">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#fecc02c1"></path> </g></svg>
+                </i>
+
+            </div>
+
+            <div class="horario-de-funcionamento">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="dia">Segunda a Sexta</td>
+                            <td class="horario">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td class="dia">Sábado</td>
+                            <td class="horario">08:00 às 13:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+        <!-- Fim Serviços -->
+
+        <section id="contato" class="section">
+            <div class="page-container">
+
+                <div class="cta">
+                    <div class="cta-desc">
+                        <div class="titulo">
+                            <p>Entre em</p>
+                            <h2>Contato</h2>
+                        </div>
+                        <div class="descricao">
+                            <p>Equipe de alto nível, especializada e preparada para resolver o seu problema.</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="tel:+556330281433">
+                                <i class="bi bi-telephone"></i>
+                                <p>(63) 3028-1433</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5563991081391/" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                                <p>(63) 99108-1391</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/souzautomotive/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <p>souzautomotive</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mapa">
+                    <h3>Onde estamos localizados <i class="bi bi-geo-alt-fill"></i></h3>
+                    <!-- <a href="https://maps.app.goo.gl/UbwHdNJMS3txCmns8" target="_blank" rel="noopener noreferrer"> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.6095996498447!2d-48.31754413043008!3d-10.226181899368184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b334d4bd4d3b5%3A0x6a99a442b2e1637c!2sRV%20Ve%C3%ADculos!5e0!3m2!1spt-BR!2sbr!4v1720281270822!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- </a> -->
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="page-container">
+            <p>© 2024 • Souza Automotive • Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+    
+    <script src="./src/js/header.js"></script>
+</body>
+</html>
+
+<!-- 
+<a target="_blank" href="https://icons8.com/icon/112251/engine-oil">Óleo de motor</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+-->
